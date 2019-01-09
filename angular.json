@@ -18,7 +18,8 @@
             "polyfills": "src/polyfills.ts",
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/styles"
+                "src/styles",
+
               ]
             },
             "assets": [
@@ -27,6 +28,7 @@
             ],
             "styles": [
               "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
               
             ],
             "scripts": []
@@ -128,11 +130,16 @@
   "defaultProject": "angular-starter",
   "schematics": {
     "@schematics/angular:component": {
-      "prefix": "app",
+      "prefix": "bwm",
       "styleext": "scss"
     },
     "@schematics/angular:directive": {
-      "prefix": "app"
+      "prefix": "bwm,"
+    },
+    "@schematics/angular:component": {
+    
+      "spec": false,
+      
     }
   }
 }
