@@ -3,7 +3,7 @@
 [latitude]="lat" 
 [longitude]="lng"
 [zoom]="13">
-<agm-circle *ngif="!isPositionError && lat && lng"
+<agm-circle *ngIf="!isPositionError && lat && lng"
 [latitude]="lat" 
 [longitude]="lng"
 [radius]="800"
@@ -11,7 +11,7 @@
 [fillOpacity]="0.4">
 </agm-circle>
 
-<agm-info-window *ngif="isPositionError"
+<agm-info-window *ngIf="isPositionError"
 [latitude]="0" 
 [longitude]="0"
 [maxWidth]="300"

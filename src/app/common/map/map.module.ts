@@ -14,6 +14,7 @@ exports: [
 MapComponent
 ],
   imports: [
+  CommonModule,
       AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBHG47rFjETUYZDfQvm7ZYy1anNyGp6z7U'
     })  
