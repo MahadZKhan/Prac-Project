@@ -53,7 +53,7 @@ class FakeDb {
 
 	pushRentalsToDb() {
 
-            const user = new User(this.user[0]);
+            const user = new User(this.users[0]);
 
 		this.rentals.forEach((rental) => {
 			const newRental = new Rental(rental);
